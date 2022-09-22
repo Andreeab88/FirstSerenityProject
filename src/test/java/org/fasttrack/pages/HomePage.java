@@ -6,7 +6,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("http://testfasttrackit.info/selenium-test/")
-public class HomePage extends PageObject {
+public class HomePage extends BasePage {
 
     @FindBy(css = ".skip-account .label")
     private WebElementFacade accountLink;

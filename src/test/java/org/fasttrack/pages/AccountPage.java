@@ -4,7 +4,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.support.FindBy;
 
-public class AccountPage extends PageObject {
+public class AccountPage extends BasePage {
 
     @FindBy(css = ".welcome-msg strong")
     private WebElementFacade welcomeTextElement;
