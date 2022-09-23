@@ -17,7 +17,7 @@ public class LoginPage extends BasePage {
     private WebElementFacade loginButton;
 
     @FindBy(css = ".error-msg span")
-   private WebElementFacade getErrorMessageElement;
+   private WebElementFacade ErrorMessageElement;
 
     public void setEmailField(String email) {
         typeInto(emailField, email);
@@ -32,7 +32,7 @@ public class LoginPage extends BasePage {
     }
 
     public String getErrorMessage(){
-       return   getErrorMessageElement.getText();
+       return   ErrorMessageElement.getText();
     }
 
 }
